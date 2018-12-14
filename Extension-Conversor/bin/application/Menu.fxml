@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <center>
+      <AnchorPane fx:id="Conversor" prefHeight="397.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="AntigoField" layoutX="14.0" layoutY="71.0" />
+            <TextField fx:id="NovoField" layoutX="207.0" layoutY="71.0" />
+            <TextField fx:id="CaminhoField" layoutX="110.0" layoutY="199.0" />
+            <Button layoutX="261.0" layoutY="341.0" mnemonicParsing="false" onAction="#StartOnAction" prefHeight="42.0" prefWidth="95.0" text="Start" />
+            <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" onAction="#CancelOnAction" prefHeight="42.0" prefWidth="95.0" text="Cancel" />
+            <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn This">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="101.0" fitWidth="115.0" layoutX="134.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/31566-200.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="221.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Into This">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="134.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Directory Path">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
